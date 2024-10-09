@@ -12,6 +12,7 @@ void entrada(struct Dados contas[], int *numPessoas);
 int verificar(struct Dados contas[], int *numPessoas);
 int deposito(struct Dados contas[], int conta);
 int saque(struct Dados contas[], int conta);
+int transferir(struct Dados contas[], int *numPessoas);
 
 int main(void) {   
     struct Dados contas[100];
@@ -124,7 +125,7 @@ int saque(struct Dados contas[], int conta) {
     printf("------------------------------------\n");
 }
 
-int transferir(struct Dados contas[], int numPessoas) {
+int transferir(struct Dados contas[], int *numPessoas) {
     char origem[25];
     char destino[25];
     double valor;
@@ -133,13 +134,13 @@ int transferir(struct Dados contas[], int numPessoas) {
     // Solicitar número da conta de origem
     printf("Digite a conta 'origem' da transferencia: ");
     scanf("%s", origem);
-    indiceOrigem = verificar(contas, &numPessoas);
+    indiceOrigem = verificar(contas, numPessoas);
     if (indiceOrigem == -1) return -1;
 
     // Solicitar número da conta de destino
     printf("Digite a conta 'destino' da transferencia: ");
     scanf("%s", destino);
-    indiceDestino = verificar(contas, &numPessoas);
+    indiceDestino = verificar(contas, numPessoas);
     if (indiceDestino == -1) return -1;
 
     // Solicitar valor da transferência

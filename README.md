@@ -20,7 +20,7 @@ Este projeto implementa um simulador de banco, permitindo criar contas, fazer de
 
 3. Compile o código:
     ```bash
-    gcc -o simulador-banco main.c
+    gcc -o simulador-banco banco.c
     ```
 4. Execute o programa:
     ```bash
@@ -41,4 +41,34 @@ Este projeto implementa um simulador de banco, permitindo criar contas, fazer de
 ## Exemplo de Uso
 
 Ao executar o programa, será apresentada a seguinte interface de menu:
+
+### Criar Conta
+
+O usuário será solicitado a inserir o nome do titular, o número da conta e o saldo inicial.
+
+### Depositar
+
+O usuário será solicitado a inserir o número da conta e o valor a ser depositado.
+
+### Sacar
+
+O usuário será solicitado a inserir o número da conta e o valor a ser sacado.
+
+### Transferir
+
+O usuário será solicitado a inserir o número das contas de origem e destino, e o valor a ser transferido.
+
+### Consultar Saldo
+
+O usuário será solicitado a inserir o número da conta para verificar o saldo atual.
+
+## Contribuindo
+
+Se você quiser contribuir com este projeto, sinta-se à vontade para abrir pull requests e issues. Toda ajuda é bem-vinda!
+
+
+## Contato
+
+Para mais informações, entre em contato via [mb685212@gmail.com](mailto:mb685212@gmail.com).
+
 

@@ -24,7 +24,7 @@ Este projeto implementa um simulador de banco, permitindo criar contas, fazer de
     ```
 4. Execute o programa:
     ```bash
-    ./simulador-banco
+    ./banco
     ```
 
 ## Estrutura do Projeto
